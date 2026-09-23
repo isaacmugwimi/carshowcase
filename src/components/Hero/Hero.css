@@ -1,0 +1,274 @@
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+  width: 100%;
+  min-height: 600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 2%;
+
+  background-color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* ================================
+   HERO CONTENT / LEFT SIDE
+================================ */
+
+.hero > div:first-child {
+  width: 45%;
+
+  position: relative;
+  z-index: 2;
+}
+
+.hero__title {
+  max-width: 550px;
+
+  margin: 0 0 25px 0;
+
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 700;
+
+  color: #111111;
+}
+
+.hero__subtitle {
+  max-width: 480px;
+
+  margin: 0 0 30px 0;
+
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: #6b7280;
+}
+
+
+/* ================================
+   HERO IMAGE CONTAINER
+================================ */
+
+.heroImageContainer {
+  position: relative;
+
+  width: 55%;
+  height: 800px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* YOUR BLUE BACKGROUND IMAGE */
+  background-image: url("/hero-bg.png");
+
+  background-repeat: no-repeat;
+
+
+  background-size: 100%;
+
+  background-position: center;
+}
+
+
+/* ================================
+   CAR IMAGE
+================================ */
+
+.hero-image {
+  position: relative;
+
+  width: 100%;
+  max-width: 650px;
+
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* ================================
+   TABLET / SMALL LAPTOP
+================================ */
+
+@media (max-width: 1200px) {
+
+  .hero {
+    padding: 50px 6%;
+  }
+
+  .hero__title {
+    font-size: 48px;
+  }
+
+  .hero__subtitle {
+    font-size: 17px;
+  }
+
+  .heroImageContainer {
+    height: 450px;
+  }
+
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .hero {
+    padding: 50px 5%;
+  }
+
+  .hero__title {
+    font-size: 42px;
+  }
+
+  .hero__subtitle {
+    font-size: 16px;
+  }
+
+  .heroImageContainer {
+    height: 400px;
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: auto;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 50px 25px 30px;
+  }
+
+
+  /* LEFT CONTENT */
+
+  .hero > div:first-child {
+    width: 100%;
+  }
+
+  .hero__title {
+    max-width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  .hero__subtitle {
+    max-width: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 16px;
+  }
+
+
+  /* IMAGE */
+
+  .heroImageContainer {
+    width: 100%;
+
+    height: 400px;
+
+    margin-top: 30px;
+
+    background-size: contain;
+  }
+
+  .hero-image {
+    width: 100%;
+
+    max-width: 600px;
+  }
+
+}
+
+
+/* ================================
+   SMALL PHONES
+================================ */
+
+@media (max-width: 480px) {
+
+  .hero {
+    padding: 40px 20px 20px;
+  }
+
+  .hero__title {
+    font-size: 34px;
+  }
+
+  .hero__subtitle {
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+  }
+
+  .heroImageContainer {
+    height: 280px;
+
+    margin-top: 20px;
+
+    background-size: contain;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+}
+
+
+/* ================================
+   VERY SMALL PHONES
+================================ */
+
+@media (max-width: 360px) {
+
+  .hero__title {
+    font-size: 30px;
+  }
+
+  .heroImageContainer {
+    height: 240px;
+  }
+
+}
